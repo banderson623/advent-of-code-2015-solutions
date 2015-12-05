@@ -1,7 +1,6 @@
 # 5: Doesn't He Have Intern-Elves For This?
 [from day 5 of advent of code](http://adventofcode.com/day/5)
 
-
 Santa needs help figuring out which strings in his text file are naughty or nice.
 
 A nice string is one with **all** of the following properties:
@@ -10,7 +9,7 @@ A nice string is one with **all** of the following properties:
 * It contains at least one letter that appears twice in a row, like `xx`, `abcdde` (dd), or `aabbccdd` (aa, bb, cc, or dd).
 * It does not contain the strings `ab`, `cd`, `pq`, or `xy`, even if they are part of one of the other requirements.
 
-### To run part 1
+**run part 1**
 
 ```
 cat input.txt | ./is_nice.rb
@@ -32,3 +31,9 @@ For example:
 * `xxyxx` is nice because it has a pair that appears twice and a letter that repeats with one between, even though the letters used by each rule overlap.
 * `uurcxstgmygtbstg` is naughty because it has a pair (tg) but no repeat with a single letter between them.
 * `ieodomkazucvgmuy` is naughty because it has a repeating letter with one between (odo), but no pair that appears twice.
+
+**run part 2**
+
+```
+cat input.txt | ./is_nice2.rb
+```
