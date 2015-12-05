@@ -1,6 +1,6 @@
-[Day 5](http://adventofcode.com/day/5)
+# 5: Doesn't He Have Intern-Elves For This?
+[from day 5 of advent of code](http://adventofcode.com/day/5)
 
-# Day 5: Doesn't He Have Intern-Elves For This?
 
 Santa needs help figuring out which strings in his text file are naughty or nice.
 
