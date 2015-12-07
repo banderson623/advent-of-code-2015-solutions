@@ -27,7 +27,7 @@ def show(lights)
   print "\n"
 end
 
-def count(lights)
+def brightness(lights)
   sum = 0
   lights.each_with_index do |row,i|
     row.each_with_index do |col,j|
@@ -61,5 +61,5 @@ commands.split("\n").each do |command_line|
   end
 end
 
-puts "sum of brightness #{count(lights)}"
+puts "sum of brightness #{brightness(lights)}"
 
