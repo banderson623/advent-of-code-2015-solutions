@@ -12,14 +12,14 @@ lights = []
   end
 end
 
-INTERPOLATER = 100
+INTERPOLATER = 25
 def show(lights)
   lights.each_with_index do |row,i|
     if i % INTERPOLATER == 0
       print "\n"
       row.each_with_index do |col,j|
         if j % INTERPOLATER == 0
-          print lights[i][j].to_s.ljust(5)
+          print lights[i][j].to_s.ljust(3)
         end
       end
     end
@@ -44,8 +44,6 @@ commands.split("\n").each do |command_line|
 
   _, action, x1, y1, x2, y2 = PARSER.match(command_line).to_a
 
-  # puts "action: #{command_line}"
-
   change = case action
   when 'on'
     1
@@ -61,8 +59,6 @@ commands.split("\n").each do |command_line|
       lights[row][col] = 0 if lights[row][col] < 0
     end
   end
-  # show(lights)
-  # exit if change == 2
 end
 
 puts "sum of brightness #{count(lights)}"
