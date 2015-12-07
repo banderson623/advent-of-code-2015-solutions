@@ -12,21 +12,6 @@ lights = []
   end
 end
 
-INTERPOLATER = 25
-def show(lights)
-  lights.each_with_index do |row,i|
-    if i % INTERPOLATER == 0
-      print "\n"
-      row.each_with_index do |col,j|
-        if j % INTERPOLATER == 0
-          print lights[i][j].to_s.ljust(3)
-        end
-      end
-    end
-  end
-  print "\n"
-end
-
 def brightness(lights)
   sum = 0
   lights.each_with_index do |row,i|
